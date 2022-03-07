@@ -1,0 +1,62 @@
+{
+  "dziem/proner-labeled-text": {
+    "data": {
+      "manual": {
+        "source": "https://raw.githubusercontent.com/dziem/proner-labeled-text/9e31349628c7052440c5ecb52bb73550bc2d50fc/manually_labeled.tsv",
+        "source_format": "tsv_data",
+        "source_args": {
+          "no_header": true,
+          "header_columns": ["token", "labels"]
+        },
+        "preprocess": "url_download",
+        "datatype": "labelled_dataset"
+      },
+      "auto": {
+        "source": "https://raw.githubusercontent.com/dziem/proner-labeled-text/9e31349628c7052440c5ecb52bb73550bc2d50fc/automatically_labeled.tsv",
+        "source_format": "tsv_data",
+        "source_args": {
+          "no_header": true,
+          "header_columns": ["token", "labels"]
+        },
+        "preprocess": "url_download",
+        "datatype": "labelled_dataset"
+      }
+    }
+  },
+  "wikidepia/zhang2019paws": {
+    "data": {
+      "final_train": {
+        "source_format": "tsv_data",
+        "source": "https://raw.githubusercontent.com/Wikidepia/indonesian_datasets/master/paraphrase/paws/data/final/train.tsv",
+        "preprocess": "url_download",
+        "datatype": "labelled_dataset"
+      },
+      "final_dev": {
+        "source_format": "tsv_data",
+        "source": "https://raw.githubusercontent.com/Wikidepia/indonesian_datasets/master/paraphrase/paws/data/final/dev.tsv",
+        "preprocess": "url_download",
+        "datatype": "labelled_dataset"
+      },
+      "final_test": {
+        "source_format": "tsv_data",
+        "source": "https://raw.githubusercontent.com/Wikidepia/indonesian_datasets/master/paraphrase/paws/data/final/test.tsv",
+        "preprocess": "url_download",
+        "datatype": "labelled_dataset"
+      }
+    }
+  },
+  "okkyibrohim/id-hate-speech-and-abusive": {
+    "data": {
+      "base": {
+        "source_format": "csv_data",
+        "source": "https://raw.githubusercontent.com/okkyibrohim/id-multi-label-hate-speech-and-abusive-language-detection/master/re_dataset.csv",
+        "source_args": {
+          "encoding": "latin-1"
+        },
+        "preprocess": "url_download",
+        "datatype": "labelled_dataset"
+
+      }
+    }
+  }
+}
